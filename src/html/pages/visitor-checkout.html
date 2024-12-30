@@ -1,0 +1,82 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../layouts/_sidebar.html')
+
+<main class="dashboard-main">
+    @@include('../layouts/_nav.html')
+
+    <div class="dashboard-main-body">
+        @@include('../layouts/_breadcrumb.html',{
+        pageTitle: "Visitor Check-Out",
+        activePage: "Visitor Check-Out"
+        })
+
+        <div class="card h-full p-0 rounded-xl border-0 overflow-hidden">
+            <div class="card-body p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 justify-center">
+                    <div class="col-span-12 lg:col-span-10 xl:col-span-8 2xl:col-span-6 2xl:col-start-4">
+                        <div class="card border border-neutral-200 dark:border-neutral-600">
+                            <div class="card-body">
+                                <form action="#">
+                                    <div class="grid grid-cols-12 gap-5">
+                                        <div class="col-span-12">
+                                            <label for=""
+                                                class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Visitor ID<span class="text-danger-600">*</span> </label>
+                                            <select class="form-control rounded-lg form-select" id="">
+                                                <option>v#0021</option>
+                                                <option>v#0022</option>
+                                                <option>v#0023</option>
+                                                <option>v#0024</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-5 col-span-12">
+                                            <label for=""
+                                                class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Exit Time<span class="text-danger-600">*</span>
+                                            </label>
+                                            <input type="time" class="form-control rounded-lg" id=""
+                                                placeholder="Enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button type="submit"
+                                            class="btn btn-primary border border-primary-600 text-base px-14 py-3 rounded-lg">
+                                            Check-Out
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('../layouts/_footer.html')
+</main>
+
+@@include('../partial-html/_template-bottom.html')
+
+
+<script>
+    // ================== Image Upload Js Start ===========================
+    // function readURL(input) {
+    //     if (input.files && input.files[0]) {
+    //         var reader = new FileReader();
+    //         reader.onload = function (e) {
+    //             $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+    //             $('#imagePreview').hide();
+    //             $('#imagePreview').fadeIn(650);
+    //         }
+    //         reader.readAsDataURL(input.files[0]);
+    //     }
+    // }
+    // $("#imageUpload").change(function () {
+    //     readURL(this);
+    // });
+    // ================== Image Upload Js End ===========================
+</script>
+
+</body>
+
+</html>

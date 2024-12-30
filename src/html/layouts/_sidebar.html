@@ -4,14 +4,21 @@
   </button>
   <div>
     <a href="index.html" class="sidebar-logo">
-      <img src="assets/images/logo.png" alt="site logo" class="light-logo">
-      <img src="assets/images/logo-light.png" alt="site logo" class="dark-logo">
-      <img src="assets/images/logo-icon.png" alt="site logo" class="logo-icon">
+      <img src="assets/images/logo.png" alt="site logo" class="light-logo" />
+      <img
+        src="assets/images/logo-light.png"
+        alt="site logo"
+        class="dark-logo"
+      />
+      <img
+        src="assets/images/logo-icon.png"
+        alt="site logo"
+        class="logo-icon"
+      />
     </a>
   </div>
   <div class="sidebar-menu-area">
     <ul class="sidebar-menu" id="sidebar-menu">
-
       <!-- Admin Menu -->
       <li class="sidebar-menu-group-title">Admin Menu</li>
 
@@ -43,10 +50,31 @@
       <!-- Visitor Management -->
       <li class="sidebar-menu-group-title">Visitor Management</li>
 
-      <li>
-        <a href="visitor-checkin.html">
+      <!-- Check-In -->
+      <li class="dropdown">
+        <a href="javascript:void(0)">
           <i class="ri-login-box-line menu-icon"></i>
           <span>Check-In</span>
+        </a>
+        <ul class="sidebar-submenu">
+          <li>
+            <a href="visitor-checkin.html">
+              <i class="ri-circle-fill circle-icon w-auto text-primary-600"></i>
+              <span>Visitor Check-In</span>
+            </a>
+          </li>
+          <li>
+            <a href="visitor-checkout.html">
+              <i class="ri-circle-fill circle-icon w-auto text-primary-600"></i>
+              <span>Visitor Check-Out</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="precheck-list.html">
+          <i class="ri-file-edit-line menu-icon"></i>
+          <span>Pre-Check</span>
         </a>
       </li>
       <li>
@@ -71,12 +99,6 @@
         <a href="#">
           <i class="ri-notification-line menu-icon"></i>
           <span>Notifications</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="ri-file-edit-line menu-icon"></i>
-          <span>Pre-Check</span>
         </a>
       </li>
 
@@ -156,8 +178,6 @@
         </a>
       </li>
 
-
-
       <!-- Applications -->
       <!-- <li class="sidebar-menu-group-title">Applications</li>
        
@@ -221,7 +241,6 @@
           </li>
         </ul>
       </li> -->
-
 
       <!-- UI Elements -->
       <!-- <li class="sidebar-menu-group-title">UI Elements</li> -->

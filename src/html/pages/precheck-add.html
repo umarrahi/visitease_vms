@@ -7,8 +7,8 @@
 
     <div class="dashboard-main-body">
         @@include('../layouts/_breadcrumb.html',{
-        pageTitle: "Visitor Check-In",
-        activePage: "Visitor Check-In"
+        pageTitle: "Pre-Check",
+        activePage: "Pre-Check"
         })
 
         <div class="card h-full p-0 rounded-xl border-0 overflow-hidden">
@@ -20,7 +20,7 @@
                                 <form action="#">
                                     <div class="grid grid-cols-12 gap-5">
                                         <div class="lg:col-span-6 col-span-12">
-                                            <label for="name"
+                                            <label for=""
                                                 class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Visitor
                                                 Name<span class="text-danger-600">*</span></label>
                                             <input type="text" class="form-control rounded-lg" id="name"
@@ -35,23 +35,19 @@
                                                 placeholder="Enter contact number">
                                         </div>
                                         <div class="lg:col-span-6 col-span-12">
-                                            <label for="name"
+                                            <label for=""
                                                 class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Host
                                                 Name<span class="text-danger-600">*</span></label>
                                             <input type="text" class="form-control rounded-lg" id="name"
                                                 placeholder="Enter host name">
                                         </div>
                                         <div class="lg:col-span-6 col-span-12">
-                                            <label for="depart"
-                                                class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Visitor
-                                                Type<span class="text-danger-600">*</span> </label>
-                                            <select class="form-control rounded-lg form-select" id="depart">
-                                                <option>Guest</option>
-                                                <option>Student</option>
-                                                <option>Employee</option>
-                                                <option>Client</option>
-                                            </select>
+                                            <label for=""
+                                                class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Visit Date and Time<span class="text-danger-600">*</span></label>
+                                            <input type="datetime-local" class="form-control rounded-lg" id="name"
+                                                placeholder="Enter host name">
                                         </div>
+                                        
                                         <div class="mb-5 col-span-12">
                                             <label for="desc"
                                                 class="inline-block font-semibold text-neutral-600 dark:text-neutral-200 text-sm mb-2">Purpose
@@ -61,8 +57,8 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-center gap-3">
-                                        <a href="user-list.html" type="button"
-                                            class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-base px-14 py-[11px] rounded-lg">Cancel</a>
+                                        <a href="precheck-list.html" type="button"
+                                            class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-base px-14 py-[11px] rounded-lg">Back</a>
                                         <button type="submit"
                                             class="btn btn-primary border border-primary-600 text-base px-14 py-3 rounded-lg">
                                             Check-In

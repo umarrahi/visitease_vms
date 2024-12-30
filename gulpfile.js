@@ -75,10 +75,18 @@
     }
 
     function distImages() {
+      // console.log('Copying images...');
       return src('./src/assets/images/**/*.*')
         .pipe(dest('./dist/assets/images/'))
     }
-
+    
+    exports.default = series(
+      distClean, 
+      parallel(disStyles, distVendorStyle, distCss, distScript, distJs, distVendorScript, prelineJs, distImages, distFonts, distFontawesome, disHTML), 
+      livePreview, 
+      watchFiles
+    );
+    
     function distFonts() {
       return src('./src/assets/fonts/**/*.*')
           .pipe(dest('./dist/assets/fonts/'))
